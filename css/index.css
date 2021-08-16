@@ -6,12 +6,72 @@ body {
     background-color: black;
 }
 
-.eu {
-    margin: auto;
+.sobre h1 {
+    font-size: 1.8em;
+    font-family: 'Courier New', Courier, monospace;
+    top: -70px;
     position: relative;
-    width: 100%;
-    background: url("../img/images.png") no-repeat;
+}
+
+.eu {
     height: 100%;
+    width: 100%;
+}
+
+.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.conhecimento {
+    top: -50px;
+    width: 80%;
+    position: relative;
+    border-radius: 50px;
+}
+
+span.typed-text {
+    font-weight: normal;
+    color: #00aeff;
+}
+
+span.cursor {
+    font-weight: bolder;
+    display: inline-block;
+    background-color: rgb(219, 5, 5);
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+
+span.cursor.typing {
+    animation: none;
+}
+
+@keyframes blink {
+    0% {
+        background-color: #ccc;
+    }
+    49% {
+        background-color: #ccc;
+    }
+    50% {
+        background-color: transparent;
+    }
+    99% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: #ccc;
+    }
+}
+
+.skills {
+    position: relative;
+    border: 2px solid white;
 }
 
 #stars {
@@ -65,6 +125,8 @@ body {
 
 .euimg {
     width: 450px;
+    position: relative;
+    top: -30px;
 }
 
 @media (max-width: 700px) {
@@ -72,33 +134,13 @@ body {
         position: relative;
         top: -50px;
         width: 350px;
-    }.sobre h3{
+    }
+    .sobre h1 {
         font-size: 1.4em;
     }
-
-}
-
-.sobre {
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    flex-direction: column;
-}
-
-h3 {
-    font-size: 1.8em;
-    font-family: 'Courier New', Courier, monospace;
-    top: -50px;
-    position: relative;
 }
 
 /* Flex Item */
-
-.item {
-    word-spacing: 0ch;
-    /* O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container. */
-    text-align: center;
-}
 
 .projetoCompleto {
     color: black;
@@ -110,73 +152,46 @@ h3 {
 .projetostitulo {
     text-align: center;
     position: relative;
-    top: 10px;
+    top: 20px;
     letter-spacing: 5px;
-
     font-family: 'Teko', sans-serif;
 }
 
 .projetos-2 {
-    top: 10px;
     width: 100%;
     display: flex;
-    
+    position: relative;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 figure {
-  width: 400px;
+    width: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-figure span{
+
+figure span {
     text-align: center;
     font-size: 1.2em;
-   
+    padding-bottom: 10px;
 }
-.nomeDoProjeto {font-weight: 900;
-    font-size: 1.4em;text-align: center;
+
+h1.nomeDoProjeto {
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    font-size: 1.4em;
+    text-align: center;
     font-family: 'Hahmlet', serif;
 }
 
 .imgprojetos {
     width: 300px;
     height: 300px;
-}
-
-@keyframes animacao {
-    25% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-}
-
-.animacao:nth-child(1) {
-    animation-delay: 0s;
-}
-
-.animacao:nth-child(2) {
-    animation-delay: 10s;
-}
-
-.animacao:nth-child(3) {
-    animation-delay: 25s;
-}
-
-.animacao:nth-child(4) {
-    animation-delay: 40s;
-}
-
-section {
-    margin: 5px;
-    border: 2px solid white;
-    width: 250px;
 }
 
 .titulo {
@@ -233,35 +248,45 @@ section {
     }
 }
 
-.redes {
-    width: 30px;
-    height: 30px;
-}
+
 
 .rodape {
     display: flex;
-    align-items: center;
+   
     justify-content: center;
     flex-direction: row;
+    flex-wrap: wrap;
     position: relative;
     bottom: 0;
     width: 100%;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.pequenotexto {
+flex:1;
+    width: 500px;
+  color: black;
+    font-weight: bolder;
+    position: relative;
+  padding-left: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
+  padding-right: 20px;
+
+}
+
+.rodapeimgs { flex:1;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   justify-items: center;
+    width: 500px;
+
+
 }
 
 .rodapeimg {
-    width: 30px;
-    height: 30px;
-}
-
-.containere {
-    width: 100%;
-    margin: 0 auto;
-}
-
-.flex {
-    display: flex;
-}
-
-.flex-item-1 {
-    flex: 1;
+    width:40px;
+    height: 40px;
 }

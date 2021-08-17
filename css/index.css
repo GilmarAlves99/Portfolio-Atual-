@@ -128,16 +128,6 @@ span.cursor.typing {
     top: 0px;
 }
 
-@media (max-width: 700px) {
-    .euimg {
-        position: relative;
-        top: -50px;
-        width: 350px;
-    }
-    .sobre h1 {
-        font-size: 1.4em;
-    }
-}
 
 /* Flex Item */
 
@@ -307,4 +297,56 @@ form button {
     background-color: #ffffff;
     font-size: 0.7em;
     font-weight: bold;
+}
+.rodape{
+    bottom: 0;
+    position: relative;
+    max-height: 100%;
+
+background-color:rgb(212, 212, 212);
+    width: 100%;
+}
+.rodapediv{
+
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap:wrap;
+
+}
+.rodapediv div{
+    flex:1;
+   
+    text-align: center;
+}
+
+.MENSAGEMTXT{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.1em;
+    color: #000000;
+    font-weight: bolder;
+    padding:20px
+  
+
+}
+
+.docIcon{
+   width: 60px;
+}
+@media (max-width: 700px) {
+    .euimg {
+        position: relative;
+        top: 0px;
+        width: 350px;
+    }
+    .sobre h1 {
+        font-size: 1.4em;
+    }
+    .conhecimento{
+        top: 50px;
+    }
+    .MENSAGEMTXT{
+        font-size:0.8em;
+    }
 }
